@@ -38,7 +38,7 @@ function [model,evolve]=flumod(X,Fac,Em,Ex,wid,op,cons,num)
 % The file must be regarded as read-only. 
 % In case of doubt, contact the holder of the copyrights.
 %
-% ?smund Rinnan
+% Asmund Rinnan
 % E-mail asmundrinnan@gmail.com
 
 dim=size(X);
@@ -52,7 +52,7 @@ if length(Em)~=dim(2) || length(Ex)~=dim(3)
 end
 
 %If the width value is not given, it is found through the use of 'fluwid'
-if nargin<5 | isempty(wid)
+if nargin<5 || isempty(wid)
     wid=fluwid(X,Em,Ex);
 end
 
