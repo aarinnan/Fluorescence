@@ -5,7 +5,7 @@ function [model,evolve]=flumod(X,Fac,Em,Ex,wid,op,cons,num)
 % scatter line is modeled as a separate factor. 
 % OBS! The PARAFAC used here is the PARAFAC from the NWAY-Toolbox
 %      which must be first in the path if you have other parafac 
-%      algorithms (download at www.models.kvl.dk)
+%      algorithms
 %
 % INPUT:
 %  X      EEM (Should be Samples x Emission x Excitation)
@@ -28,7 +28,7 @@ function [model,evolve]=flumod(X,Fac,Em,Ex,wid,op,cons,num)
 % Please refer to the paper
 % "1st Order Rayleigh as a Separate Component in the 
 % Decomposition of Fluorescence Landscapes", Rinnan, Booksh, Bro
-% Anal.Chim.Acta, 2005, In Press.
+% Anal.Chim.Acta, 2005, 537: 349-358. DOI: 10.1016/j.aca.2005.01.044
 
 
 % Copyright, 2005 - 

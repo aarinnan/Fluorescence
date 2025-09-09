@@ -1,4 +1,4 @@
-function wid=fluwid(x,em,ex);
+function wid=fluwid(x,em,ex)
 % wid=fluwid(x,em,ex) - utility function for flumod
 %
 % Estimates the width of the 1st order Rayleigh peak. Can also be used as
@@ -20,11 +20,11 @@ function wid=fluwid(x,em,ex);
 % The file must be regarded as read-only. 
 % In case of doubt, contact the holder of the copyrights.
 %
-% Åsmund Rinnan
+% ?smund Rinnan
 % E-mail asmundrinnan@gmail.com
 
 dim=size(x);
-if length(em)~=dim(2) | length(ex)~=dim(3)
+if length(em)~=dim(2) || length(ex)~=dim(3)
     id=[find(dim~=length(em) & dim~=length(ex)) find(dim==length(em)) find(dim==length(ex))];
     disp('The EEM should be in the format Samples x Emission x Excitation')
     disp(['Type ''X=reshape(nshape(X,[' num2str(id) ']),[' num2str(dim(id)) ']);'''])
